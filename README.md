@@ -1,3 +1,3 @@
 # Nimbus Paper
 
-This is the main branch for the Nimbus PaperMC Minecraft Java Edition server. If the server is publicly available, its files should appear on this branch.
+This is the development branch for the Nimbus PaperMC Minecraft Java Edition server. It contains the code for the development server, which is used for plugin development.
