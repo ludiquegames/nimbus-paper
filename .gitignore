@@ -6,6 +6,7 @@ cache/
 libraries/
 logs/
 versions/
+.console_history
 
 # Specific configuration files
 banned-ips.json
@@ -19,3 +20,6 @@ whitelist.json
 
 # bStats config
 plugins/bStats/config.yml
+
+# Worlds
+devmap*/
