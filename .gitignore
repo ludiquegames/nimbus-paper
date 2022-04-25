@@ -1,0 +1,21 @@
+# User scripts
+run.bat
+
+# Minecraft Libraries & server logs
+cache/
+libraries/
+logs/
+versions/
+
+# Specific configuration files
+banned-ips.json
+banned-players.json
+eula.txt
+ops.json
+server.properties
+usercache.json
+version_history.json
+whitelist.json
+
+# bStats config
+plugins/bStats/config.yml
