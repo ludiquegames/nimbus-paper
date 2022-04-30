@@ -54,7 +54,7 @@ change-tab-complete-name: false
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
-change-playerlist: true
+change-playerlist: false
 
 # When EssentialsChat.jar isn't used, force essentials to add the prefix and suffix from permission plugins to displayname.
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
@@ -171,6 +171,7 @@ overridden-commands:
 # See http://wiki.bukkit.org/Commands.yml#aliases to map commands to other plugins.
 disabled-commands:
   # general
+  - motd
   - nick
   # funny
   - antioch
@@ -189,6 +190,7 @@ disabled-commands:
   - jail
   - jails
   - setjail
+  - togglejail
   # economy
   - sell
 
@@ -442,7 +444,8 @@ per-warp-permission: false
 # Detailed instructions and examples can be found on the wiki: http://wiki.ess3.net/wiki/List
 list:
   # To merge groups, list the groups you wish to merge
-  #Staff: owner admin moderator
+  Staff: owner admin moderator
+  Players: member default
   #Admins: owner admin
   # To limit groups, set a max user limit
   #builder: 20
@@ -555,8 +558,8 @@ allow-silent-join-quit: false
 # {ONLINE} - The number of players online.
 # {UNIQUE} - The number of unique players to join the server.
 # {UPTIME} - The amount of time the server has been online.
-custom-join-message: '[&a+&r] &f{PLAYER}'
-custom-quit-message: '[&c-&r] &f{PLAYER}'
+custom-join-message: '&7[&a+&7] &f{PLAYER}'
+custom-quit-message: '&7[&c-&7] &f{PLAYER}'
 
 # You can set a custom join message for users who join with a new username here.
 # This message will only be used if a user has joined before and have since changed their username.
@@ -572,7 +575,7 @@ custom-quit-message: '[&c-&r] &f{PLAYER}'
 # {ONLINE} - The number of players online.
 # {UNIQUE} - The number of unique players to join the server.
 # {UPTIME} - The amount of time the server has been online.
-custom-new-username-message: '[&a+&r] &f{PLAYER} has logged in for the first time!'
+custom-new-username-message: 'none'
 
 # Should Essentials override the vanilla "Server Full" message with its own from the language file?
 # Set to false to keep the vanilla message.
@@ -917,7 +920,7 @@ chat:
   # {TEAMPREFIX} - The sender's scoreboard team prefix.
   # {TEAMSUFFIX} - The sender's scoreboard team suffix.
 
-  format: '&7[&r{PREFIX}&7] &f{DISPLAYNAME}: {MESSAGE}'
+  format: '&f{DISPLAYNAME}&7: &r{MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 

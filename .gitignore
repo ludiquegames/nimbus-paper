@@ -23,3 +23,6 @@ plugins/bStats/config.yml
 
 # Worlds
 devmap*/
+
+# Essentials
+plugins/Essentials/userdata/*
