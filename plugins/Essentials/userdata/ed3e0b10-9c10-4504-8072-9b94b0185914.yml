@@ -11,28 +11,29 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 0
+  lastteleport: 1651297077355
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1650905979747
-  login: 1650905955339
+  logout: 1651297086459
+  login: 1651286141023
 money: '0'
 last-account-name: DavusBlack
 lastlocation:
   world: a906689d-d0b1-4928-ae79-d4d6439ec241
   world-name: devmap
-  x: 0.0
-  y: 65.0
-  z: 0.0
-  yaw: 0.0
-  pitch: 0.0
+  x: -6.880376829938362
+  y: 78.03745301834842
+  z: 2.380392481284292
+  yaw: 170.3946533203125
+  pitch: 45.4498176574707
 logoutlocation:
   world: a906689d-d0b1-4928-ae79-d4d6439ec241
   world-name: devmap
-  x: 7.655333015907798
-  y: 64.0
-  z: -2.1873151145283427
-  yaw: -48.15017318725586
-  pitch: -1.200042486190796
+  x: 0.5
+  y: 110.61813685956619
+  z: 0.5
+  yaw: -43.6490478515625
+  pitch: 36.59994125366211
+confirm-pay: false

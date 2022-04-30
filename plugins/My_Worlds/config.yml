@@ -82,9 +82,6 @@ overridePortalPhysics: true
 
 # Whether to automatically import the world configuration of MultiVerse for new (unknown) worlds
 importFromMultiVerse: true
-# Note that default world properties are then no longer applied, as MultiVerse takes that over
-# This setting is only active if MultiVerse-Core is installed.
-importFromMultiverse: ~
 
 # Whether game mode changes are logged to console, including plugin name and stack trace
 # This helps to debug problems where game modes spuriously change, or fail to change properly
@@ -94,3 +91,6 @@ debugLogGMChanges: false
 # This is only active when 'remember last position' is enabled for the world
 # It makes that option work not just for /tpp, but also when taking portals to a world
 portalToLastPosition: true
+# Note that default world properties are then no longer applied, as MultiVerse takes that over
+# This setting is only active if MultiVerse-Core is installed.
+importFromMultiverse: ~
