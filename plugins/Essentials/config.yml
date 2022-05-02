@@ -27,7 +27,7 @@
 ops-name-color: 'none'
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
-nickname-prefix: '~'
+nickname-prefix: ''
 
 # The maximum length allowed in nicknames. The nickname prefix is included in this.
 max-nick-length: 15
@@ -50,11 +50,11 @@ hide-displayname-in-vanish: true
 change-displayname: true
 
 # This option will cause Essentials to show players' displaynames instead of usernames when tab completing Essentials commands.
-change-tab-complete-name: false
+change-tab-complete-name: true
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
-change-playerlist: false
+change-playerlist: true
 
 # When EssentialsChat.jar isn't used, force essentials to add the prefix and suffix from permission plugins to displayname.
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
@@ -172,7 +172,6 @@ overridden-commands:
 disabled-commands:
   # general
   - motd
-  - nick
   # funny
   - antioch
   - kittycannon
