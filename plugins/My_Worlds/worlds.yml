@@ -1,23 +1,14 @@
-world:
+devmap_nether:
   loaded: true
   keepSpawnLoaded: true
-  environment: normal
+  environment: nether
   chunkGenerator: ''
   gamemode: NONE
   rememberlastplayerpos: false
   pvp: true
   defaultNetherPortal:
     mode: NETHER_LINK
-    name: world_nether
-    display: ''
-    playersOnly: false
-    teleportMounts: true
-    teleportToLastPosition: false
-    showCredits: false
-    nonPlayersCreatePortals: true
-  defaultEndPortal:
-    mode: END_PLATFORM
-    name: world_the_end
+    name: devmap
     display: ''
     playersOnly: false
     teleportMounts: true
@@ -29,12 +20,15 @@ world:
   hunger: true
   formIce: true
   formSnow: true
-  difficulty: HARD
+  difficulty: NORMAL
   reloadWhenEmpty: false
   bedRespawnEnabled: true
   advancementsEnabled: true
   advancementsSilent: false
-world_the_end:
+  respawn:
+    type: WORLD_SPAWN
+    world: devmap
+devmap_the_end:
   loaded: true
   keepSpawnLoaded: true
   environment: the_end
@@ -44,7 +38,7 @@ world_the_end:
   pvp: true
   defaultEndPortal:
     mode: RESPAWN
-    name: world
+    name: devmap
     display: ''
     playersOnly: true
     teleportMounts: true
@@ -63,18 +57,27 @@ world_the_end:
   advancementsSilent: false
   respawn:
     type: WORLD_SPAWN
-    world: world
-world_nether:
+    world: devmap
+devmap:
   loaded: true
   keepSpawnLoaded: true
-  environment: nether
+  environment: normal
   chunkGenerator: ''
   gamemode: NONE
   rememberlastplayerpos: false
   pvp: true
   defaultNetherPortal:
     mode: NETHER_LINK
-    name: world
+    name: devmap_nether
+    display: ''
+    playersOnly: false
+    teleportMounts: true
+    teleportToLastPosition: false
+    showCredits: false
+    nonPlayersCreatePortals: true
+  defaultEndPortal:
+    mode: END_PLATFORM
+    name: devmap_the_end
     display: ''
     playersOnly: false
     teleportMounts: true
@@ -91,6 +94,3 @@ world_nether:
   bedRespawnEnabled: true
   advancementsEnabled: true
   advancementsSilent: false
-  respawn:
-    type: WORLD_SPAWN
-    world: world
