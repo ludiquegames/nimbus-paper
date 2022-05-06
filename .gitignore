@@ -1,5 +1,6 @@
-# User scripts
+# Paper jar & User scripts
 run.bat
+paper*.jar
 
 # Minecraft Libraries & server logs
 cache/
